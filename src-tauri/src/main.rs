@@ -3,7 +3,7 @@
 
 #[tauri::command]
 fn greet(name: &str) {
-   println!("{}", name);
+  println!("{}", name);
 }
 
 fn main() {
