@@ -4,4 +4,13 @@
  // now we can call our Command!
  // You will see "Welcome from Tauri" replaced
  // by "Hello, World!"!
- invoke('greet', { name: 'Hello World' });
+
+ const input = document.getElementById("Input");
+ input.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        invoke('save_command', { command: input.value });
+        input.value = "";
+    }
+});
+
+ 
