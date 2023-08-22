@@ -13,4 +13,8 @@
     }
 });
 
+window.addEventListener("load", (event) => {
+    invoke('load_database');    
+});
+
  
